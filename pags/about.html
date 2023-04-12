@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Equipe</title>
-	<script src="../javascript.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+			* {
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+			box-sizing: border-box;
+			outline: none;
+			scroll-behavior: smooth;
+			font-family: Arial;
+		}
+		
 		body {
 			background-image: url("../images/penes.png");
             background-repeat: no-repeat;
@@ -13,8 +24,6 @@
 			font-family: Arial, sans-serif;
 			color: #444444;
 			background-color: #121214;
-			margin: 0;
-			padding: 0;
 		}
 
 		.container {
@@ -114,6 +123,7 @@
 			width: 70%;
 			font-size: 50px;
 			text-shadow: 2px 2px black;
+			margin-bottom: 53px;
 		}
 
 		.cont p {
@@ -173,60 +183,62 @@
 			margin-left: 15px;
 		}	
 	}
-	</style>
-</head>
-<body>
-	<header>
-		<nav class="menu">
-			<img class="logo" src="../images/devlogowhite.png" alt="Logo do site.">
-			<ul>
-				<li><a href="../index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="#">CONTENT</a></li>
-			</ul>
-			<ul>
-				<li><a href="login.html">LOGIN</a></li>
-				<li><a class="signupborder" href="register.html">SIGNUP</a></li>
-			</ul>
-		</nav>
+		</style>
+        <script src="javascript.js"></script>
+        <title>Devschool</title>
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <img class="logo" src="../images/devlogowhite.png" alt="Logo do site.">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">CONTENT</a></li>
+                </ul>
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a class="signupborder" href="register.html">SIGNUP</a></li>
+                </ul>
+            </nav>
 
-		<div class="topnav">
-			<img class="active" src="../images/devlogowhite.png" alt="">
-			<div id="myLinks">
-			  <a class="menut" href="../index.html">HOME</a>
-			  <a class="menut" href="about.html">ABOUT</a>
-			  <a class="menut" href="#">CONTENT</a>
+            <div class="topnav">
+                <img class="active" src="../images/devlogowhite.png" alt="">
+                <div id="myLinks">
+                  <a class="menut" href="../index.html">HOME</a>
+                  <a class="menut" href="about.html">ABOUT</a>
+                  <a class="menut" href="#">CONTENT</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+		<div class="cont">
+			<h1>Uma escolha de mentes brilhantes para entregar sempre o melhor.</h1>
+			<p>O objetivo do site é ensinar programação de forma acessível e interativa, fornecendo uma plataforma onde um programador experiente pode ajudar iniciantes, tirando duvidas e fornecendo suporte para desenvolver habilidades sólidas e se tornarem programadores competentes e confiantes, mantendo-se atualizado com as últimas tendências e avanços da indústria.</p>
+		</div>
+		<div class="container">
+			<div class="card">
+				<img src="../images/defaultimg.jpg">
+				<h2>Yves L.</h2>
+				<p>CEO & Founder</p>
 			</div>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			  <i class="fa fa-bars"></i>
-			</a>
+			<div class="card">
+				<img src="../images/defaultimg.jpg">
+				<h2>Jonas S.</h2>
+				<p>COO & Founder</p>
+			</div>
+			<div class="card">
+				<img src="../images/defaultimg.jpg">
+				<h2>Karina S.</h2>
+				<p>Bussiness Manager</p>
+			</div>
+			<div class="card">
+				<img src="../images/defaultimg.jpg">
+				<h2>Jonas J.</h2>
+				<p>Bussiness Manager</p>
+			</div>
 		</div>
-	</header>
-	<div class="cont">
-		<h1>Uma escolha de mentes brilhantes para entregar sempre o melhor.</h1>
-		<p>O objetivo do site é ensinar programação de forma acessível e interativa, fornecendo uma plataforma onde um programador experiente pode ajudar iniciantes, tirando duvidas e fornecendo suporte para desenvolver habilidades sólidas e se tornarem programadores competentes e confiantes, mantendo-se atualizado com as últimas tendências e avanços da indústria.</p>
-	</div>
-	<div class="container">
-		<div class="card">
-			<img src="../images/defaultimg.jpg">
-			<h2>Yves L.</h2>
-			<p>CEO & Founder</p>
-		</div>
-		<div class="card">
-			<img src="../images/defaultimg.jpg">
-			<h2>Jonas S.</h2>
-			<p>COO & Founder</p>
-		</div>
-		<div class="card">
-			<img src="../images/defaultimg.jpg">
-			<h2>Karina S.</h2>
-			<p>Bussiness Manager</p>
-		</div>
-		<div class="card">
-			<img src="../images/defaultimg.jpg">
-			<h2>Jonas J.</h2>
-			<p>Bussiness Manager</p>
-		</div>
-	</div>
-</body>
+    </body>
 </html>
