@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Equipe</title>
+	<script src="../javascript.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			background-image: url("../images/background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+			font-family: Arial, sans-serif;
+			color: #444444;
+			background-color: #121214;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: calc(50vh - 80px);
+		}
+
+		.card {
+			width: 300px;
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid black;
+			border-radius: 5px;
+			text-align: center;
+			background-color: white;
+			color: black;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.card img {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			object-fit: cover;
+			object-position: center;
+			margin-bottom: 20px;
+		}
+
+		.card h2 {
+			font-size: 24px;
+			margin-top: 0;
+		}
+
+		.card p {
+			font-size: 18px;
+			margin-bottom: 0;
+		}
+		
+		.menu {
+    		display: flex;
+    		justify-content: space-between;
+			align-items: center;
+			padding: 15px;
+			background-color: #202024;
+			color: #fff;
+		}
+
+		.logo {
+			width: 180px;
+			margin-left: 15px;
+		}
+
+		.menu ul {
+			display: flex;
+			list-style: none;
+		}
+
+		.menu li {
+			margin: 0 15px;
+		}
+
+		.menu a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #A8A8B3;
+			transition: 0.5s ease;
+		}
+
+		.menu a:hover {
+			color: #7044e4;
+		}
+
+		.signupborder {
+			border: 1px solid #7044e4;
+			border-radius: 10px;
+			padding: 10px;
+		}
+
+		.topnav {
+			display: none;
+		}
+
+		.cont {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 50px;
+			color: #fff;
+			text-align: center;
+		}
+
+		.cont h1 {
+			width: 70%;
+			font-size: 50px;
+			text-shadow: 2px 2px black;
+		}
+
+		.cont p {
+			width: 50%;
+			font-size: 20px;
+			text-shadow: 2px 2px black;
+			background-color: rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+			padding: 20px;
+			margin-bottom: 53px;
+		}
+
+		@media screen and (max-width: 768px) {
+
+		.menu {
+			display: none;
+		}
+
+		.topnav {
+			justify-content: space-between;
+			align-items: center;
+			padding: 13px;
+			overflow: hidden;
+			background-color: #202024;
+			position: relative;
+			display: block;
+		}
+
+		.topnav #myLinks {
+			display: none;
+		}
+
+		.topnav a {
+			text-transform: uppercase;
+			color: #A8A8B3;
+			transition: 0.5s ease;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			display: block;
+		}
+
+		.menut:hover {
+			color: #7044e4;
+		}
+
+		.topnav a.icon {
+			display: block;
+			position: absolute;
+			right: 15px;
+			top: 15px;
+		}
+
+		.active {
+			width: 180px;
+			margin-top: 1.5px;
+			margin-left: 15px;
+		}	
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="menu">
+			<img class="logo" src="../images/devlogowhite.png" alt="Logo do site.">
+			<ul>
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="#">CONTENT</a></li>
+			</ul>
+			<ul>
+				<li><a href="login.html">LOGIN</a></li>
+				<li><a class="signupborder" href="register.html">SIGNUP</a></li>
+			</ul>
+		</nav>
+
+		<div class="topnav">
+			<img class="active" src="../images/devlogowhite.png" alt="">
+			<div id="myLinks">
+			  <a class="menut" href="../index.html">HOME</a>
+			  <a class="menut" href="about.html">ABOUT</a>
+			  <a class="menut" href="#">CONTENT</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			  <i class="fa fa-bars"></i>
+			</a>
+		</div>
+	</header>
+	<div class="cont">
+		<h1>Uma escolha de mentes brilhantes para entregar sempre o melhor.</h1>
+		<p>O objetivo do site é ensinar programação de forma acessível e interativa, fornecendo uma plataforma onde um programador experiente pode ajudar iniciantes, tirando duvidas e fornecendo suporte para desenvolver habilidades sólidas e se tornarem programadores competentes e confiantes, mantendo-se atualizado com as últimas tendências e avanços da indústria.</p>
+	</div>
+	<div class="container">
+		<div class="card">
+			<img src="../images/defaultimg.jpg">
+			<h2>Yves L.</h2>
+			<p>CEO & Founder</p>
+		</div>
+		<div class="card">
+			<img src="../images/defaultimg.jpg">
+			<h2>Jonas S.</h2>
+			<p>COO & Founder</p>
+		</div>
+		<div class="card">
+			<img src="../images/defaultimg.jpg">
+			<h2>Karina S.</h2>
+			<p>Bussiness Manager</p>
+		</div>
+		<div class="card">
+			<img src="../images/defaultimg.jpg">
+			<h2>Jonas J.</h2>
+			<p>Bussiness Manager</p>
+		</div>
+	</div>
+</body>
+</html>
