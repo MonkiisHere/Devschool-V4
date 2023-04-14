@@ -1,7 +1,7 @@
 # Devschool
 
 <p align="center">
-  <img src="https://i.imgur.com/JHeCfPm.png" alt="Logo do projeto">
+  <img src="https://devschoolnew.netlify.app/images/devlogowhite.png" alt="Logo do projeto">
 </p>
 
 ## Sobre o projeto
