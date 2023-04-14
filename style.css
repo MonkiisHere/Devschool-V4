@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
 
+/* ==== GERAL ==== */
 * {
     margin: 0px;
     padding: 0px;
@@ -16,15 +17,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: url();
+    background-color: #121212;
 }
 
-body {
-    background-color: #121214;
-    margin: 0;
-    padding: 0;
-}
-
+/* ==== SCROLL BAR ==== */
 html::-webkit-scrollbar {
     width: 10px;
 }
@@ -40,8 +36,8 @@ html::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
-/*===== Menu Bar =====*/
-
+/* ==== MENU BAR ==== */
+/* ==== MENU PC ==== */
 .menu {
     display: flex;
     justify-content: space-between;
@@ -82,8 +78,70 @@ html::-webkit-scrollbar-thumb {
     padding: 10px;
 }
 
-/*===== Main Text =====*/
+/* ==== MENU CELL ==== */
+.topnav {
+    display: none;
+}
 
+@media screen and (max-width: 768px) {
+    .maintext h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Cabinet Grotesk", sans-serif;
+        font-weight: 800;
+        font-size: 2.7em;
+        line-height: 1em;
+        width: 70%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .topnav {
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px;
+        overflow: hidden;
+        background-color: #202024;
+        position: relative;
+        display: block;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        text-transform: uppercase;
+        color: #A8A8B3;
+        transition: 0.5s ease;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .menut:hover {
+        color: #7044e4;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .active {
+        width: 180px;
+        margin-top: 1.5px;
+        margin-left: 15px;
+    }
+}
+
+/* ==== INDEX ==== */
+/* ==== MAIN TEXT ==== */
 .maintext {
     display: flex;
     flex-direction: column;
@@ -100,11 +158,13 @@ html::-webkit-scrollbar-thumb {
     font-weight: 800;
     font-size: 3.5em;
     line-height: 1em;
+    width: 70%;
 }
 
 .maintext p {
     font-size: 1em;
     text-align: center;
+    width: 50%;
 }
 
 .maintext button {
@@ -117,10 +177,11 @@ html::-webkit-scrollbar-thumb {
     border-radius: 8px;
     transition: all 0.5s ease 0s;
     cursor: pointer;
-  }
+}
+
 .maintext button:hover {
     background-color: rgb(83, 44, 190);
-  }
+}
 
 .divider {
     width: 80%;
@@ -132,8 +193,7 @@ html::-webkit-scrollbar-thumb {
     margin-right: auto;
 }
 
-/*===== Topics =====*/
-
+/* ==== MAIN TOPICS ==== */
 .container {
     display: flex;
     justify-content: center;
@@ -141,19 +201,17 @@ html::-webkit-scrollbar-thumb {
     text-align: center;
 }
   
-  /* Estilo do tópico */
 .topic {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
     margin: 10px;
     padding: 20px;
-    position: relative; /* Adicionado para posicionar o número */
+    position: relative;
     width: 300px;
     height: 200px;
 }
   
-/* Estilo do número do tópico */
 .number {
-    position: absolute; /* Adicionado para posicionar o número */
+    position: absolute;
     top: -10px;
     left: -10px;
     width: 50px;
@@ -165,14 +223,13 @@ html::-webkit-scrollbar-thumb {
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
-    z-index: 1; /* Adicionado para que o número apareça na frente */
+    z-index: 1;
 }
 
 #number1 {
     background-color: #7044e4;
 }
-  
-  /* Estilo do título do tópico */
+
 .topic h1 {
     color: #fff;
     font-size: 24px;
@@ -180,91 +237,35 @@ html::-webkit-scrollbar-thumb {
     margin-bottom: 10px;
 }
   
-  /* Estilo da descrição do tópico */
 .topic p {
     color: #A8A8B3;
     font-size: 18px;
     margin-top: 0;
 }
   
-  /* Estilos para telas menores */
+
 @media screen and (max-width: 940px) {
     .container {
         flex-direction: column;
     }
 }
 
-/*===== Menu Bar em Celular =====*/
-
-.topnav {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-
-.menu {
-    display: none;
-}
-
-.topnav {
-    justify-content: space-between;
-    align-items: center;
-    padding: 13px;
-    overflow: hidden;
-    background-color: #202024;
-    position: relative;
-    display: block;
-}
-
-.topnav #myLinks {
-    display: none;
-}
-
-.topnav a {
-    text-transform: uppercase;
-    color: #A8A8B3;
-    transition: 0.5s ease;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-.menut:hover {
-    color: #7044e4;
-}
-
-.topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-}
-
-.active {
-    width: 180px;
-    margin-top: 1.5px;
-    margin-left: 15px;
-}
-    
-}
-  
 @media screen and (max-width: 1250px) {
     .topicsmain {
-    position: relative;
-    margin-bottom: 20px;
-    padding-left: 75px; /* adicionado para dar espaço para o círculo */
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 13%;
-}
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 75px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 13%;
+    }
 
-.imgtopic {
-    position: absolute;
-    left: 50%;
-    width: 150px;
-    top: 100;
-}
+    .imgtopic {
+        position: absolute;
+        left: 50%;
+        width: 150px;
+        top: 100;
+    }
 }
