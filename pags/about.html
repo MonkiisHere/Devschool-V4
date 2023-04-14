@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="../javascript.js"></script>
         <style>
 			* {
 			margin: 0px;
@@ -31,7 +32,7 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
-			height: calc(50vh - 80px);
+			height: calc(50vh);
 		}
 
 		.card {
@@ -123,7 +124,7 @@
 			width: 70%;
 			font-size: 50px;
 			text-shadow: 2px 2px black;
-			margin-bottom: 53px;
+			margin-bottom: 60px;
 		}
 
 		.cont p {
@@ -133,7 +134,7 @@
 			background-color: rgba(0, 0, 0, 0.3);
 			border-radius: 5px;
 			padding: 20px;
-			margin-bottom: 53px;
+			margin-bottom: 40px;
 		}
 
 		@media screen and (max-width: 980px) {
@@ -183,6 +184,36 @@
 			margin-left: 15px;
 		}	
 	}
+
+		@media screen and (max-width: 768px) {
+			
+		.cont {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 50px;
+			color: #fff;
+			text-align: center;
+		}
+
+		.cont h1 {
+			width: 100%;
+			font-size: 30px;
+			text-shadow: 2px 2px black;
+			margin-bottom: 60px;
+		}
+
+		.cont p {
+			width: 95%;
+			font-size: 15px;
+			text-shadow: 2px 2px black;
+			background-color: rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+			padding: 20px;
+			margin-bottom: 40px;
+		}
+		}
 		</style>
         <script src="javascript.js"></script>
         <title>Devschool</title>
@@ -208,6 +239,8 @@
                   <a class="menut" href="../index.html">HOME</a>
                   <a class="menut" href="about.html">ABOUT</a>
                   <a class="menut" href="#">CONTENT</a>
+				  <a class="menut" href="login.html">LOGIN</a>
+				  <a class="menut" href="register.html">REGISTER</a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
