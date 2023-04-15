@@ -1,0 +1,174 @@
+/* ==== MENU CELL ==== */
+.topnav {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .maintext h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Cabinet Grotesk", sans-serif;
+        font-weight: 800;
+        font-size: 2.7em;
+        line-height: 1em;
+        width: 70%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .topnav {
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px;
+        overflow: hidden;
+        background-color: #202024;
+        position: relative;
+        display: block;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        text-transform: uppercase;
+        color: #A8A8B3;
+        transition: 0.5s ease;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .menut:hover {
+        color: #7044e4;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .active {
+        width: 180px;
+        margin-top: 1.5px;
+        margin-left: 15px;
+    }
+}
+
+/* ==== INDEX ==== */
+/* ==== MAIN TEXT ==== */
+@media screen and (max-width: 415px) {
+    .maintext h1 {
+        font-size: 50px;
+    }
+}
+
+/* ==== MAIN TOPICS ==== */
+@media screen and (max-width: 940px) {
+    .container2 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .topicsmain {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 75px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 13%;
+    }
+
+    .imgtopic {
+        position: absolute;
+        left: 50%;
+        width: 150px;
+        top: 100;
+    }
+}
+
+/* ==== ABOUT MOBILE CSS ==== */
+@media screen and (max-width: 980px) {
+    .menu {
+        display: none;
+    }
+
+    .topnav {
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px;
+        overflow: hidden;
+        background-color: #202024;
+        position: relative;
+        display: block;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        text-transform: uppercase;
+        color: #A8A8B3;
+        transition: 0.5s ease;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .menut:hover {
+        color: #7044e4;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .active {
+        width: 180px;
+        margin-top: 1.5px;
+        margin-left: 15px;
+    }	
+}
+
+@media screen and (max-width: 768px) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .cont h1 {
+        width: 100%;
+        font-size: 30px;
+        text-shadow: 2px 2px black;
+        margin-bottom: 60px;
+    }
+
+    .cont p {
+        width: 95%;
+        font-size: 15px;
+        text-shadow: 2px 2px black;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+}
+

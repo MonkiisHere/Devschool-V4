@@ -1,0 +1,41 @@
+/* ==== MENU BAR ==== */
+/* ==== MENU PC ==== */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #202024;
+    color: #fff;
+}
+
+.logo {
+    width: 180px;
+    margin-left: 15px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #A8A8B3;
+    transition: 0.5s ease;
+}
+
+.menu a:hover {
+    color: #7044e4;
+}
+
+.signupborder {
+    border: 1px solid #7044e4;
+    border-radius: 10px;
+    padding: 10px;
+}

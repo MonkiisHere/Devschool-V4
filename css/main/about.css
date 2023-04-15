@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial;
+}
+
+body {
+    background-image: url("../../resources/bgabout.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #444444;
+    background-color: #121214;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(50vh);
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.cont h1 {
+    width: 70%;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+    margin-bottom: 60px;
+}
+
+.cont p {
+    width: 50%;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
+
+/* ==== GERAL ==== */
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial;
+}
+
+.bg-img {
+    width: 100%;
+    height: 200vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #121212;
+    background-image: url(../../resources/bgabout.png);
+}
+
+/* ==== SCROLL BAR ==== */
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #202024;
+}
+
+html::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    background-clip: content-box;
+    background-color: #7044e4;
+    border-radius: 10px;
+}
+
+/* ==== MENU BAR ==== */
+/* ==== MENU PC ==== */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #202024;
+}
+
+.logo {
+    width: 180px;
+    margin-left: 15px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #A8A8B3;
+    transition: 0.5s ease;
+}
+
+.menu a:hover {
+    color: #7044e4;
+}
+
+.signupborder {
+    border: 1px solid #7044e4;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* ==== INDEX ==== */
+/* ==== MAIN TEXT ==== */
+.maintext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    color: #fff;
+}
+
+.maintext h1 {
+    text-align: center;
+
+    margin-bottom: 20px;
+    font-family: "Cabinet Grotesk", sans-serif;
+    font-weight: 800;
+    font-size: 3.5em;
+    line-height: 1em;
+    width: 70%;
+}
+
+.maintext p {
+    font-size: 1em;
+    text-align: center;
+    width: 50%;
+}
+
+.maintext button {
+    margin-top: 16px;
+    background: rgb(110, 66, 229);
+    color: rgb(248, 249, 250);
+    padding: 12px 48px;
+    font-size: 1.125em;
+    font-weight: 200;
+    border-radius: 8px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+.maintext button:hover {
+    background-color: rgb(83, 44, 190);
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: #414141;
+    margin-bottom: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==== MAIN TOPICS ==== */
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.topic {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 255, 255, 0.1);
+}
+  
+.number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    background-color: #1B1C31;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#number1 {
+    background-color: #7044e4;
+}
+
+.topic h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+  
+.topic p {
+    color: #A8A8B3;
+    font-size: 18px;
+    margin-top: 0;
+}
